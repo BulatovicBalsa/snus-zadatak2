@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak2", "Zadatak2.csproj", "{B9A132D7-D8EF-40F2-826E-6E42E301920D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5FA85ABD-3B22-45C8-B4BB-C0809C723507}"
+	ProjectSection(SolutionItems) = preProject
+		XMLFile1.xml = XMLFile1.xml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9A132D7-D8EF-40F2-826E-6E42E301920D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A132D7-D8EF-40F2-826E-6E42E301920D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A132D7-D8EF-40F2-826E-6E42E301920D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A132D7-D8EF-40F2-826E-6E42E301920D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6566DEBB-2B6D-4D71-811B-F2793374B12D}
+	EndGlobalSection
+EndGlobal

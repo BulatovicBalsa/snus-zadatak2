@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Databases>
+  <Database name="Sold Phones">
+    <Phone OwnerId="0" Manufacturer="Apple" OS="IOS" Network="3G">Model1</Phone>
+    <Phone OwnerId="0" Manufacturer="Apple" OS="IOS" Network="4G">Model2</Phone>
+    <Phone OwnerId="0" Manufacturer="Samsung" OS="Android" Network="4G">Model3</Phone>
+    <Phone OwnerId="1" Manufacturer="Huawei" OS="Android" Network="3G">Model4</Phone>
+    <Phone OwnerId="1" Manufacturer="Apple" OS="IOS" Network="4G">Model5</Phone>
+    <Phone OwnerId="2" Manufacturer="Apple" OS="IOS" Network="3G">Model6</Phone>
+    <Phone OwnerId="2" Manufacturer="Huawei" OS="Android" Network="3G">Model7</Phone>
+    <Phone OwnerId="2" Manufacturer="Xiaomi" OS="Android" Network="4G">Model8</Phone>
+    <Phone OwnerId="2" Manufacturer="Samsung" OS="Android" Network="4G">Model9</Phone>
+    <Phone OwnerId="3" Manufacturer="Samsung" OS="Android" Network="3G">Model10</Phone>
+    <Phone OwnerId="3" Manufacturer="Xiaomi" OS="Android" Network="4G">Model11</Phone>
+    <Phone OwnerId="4" Manufacturer="Huawei" OS="Android" Network="4G">Model12</Phone>
+    <Phone OwnerId="5" Manufacturer="Apple" OS="IOS" Network="3G">Model13</Phone>
+    <Phone OwnerId="5" Manufacturer="Samsung" OS="Android" Network="4G">Model14</Phone>
+    <Phone OwnerId="5" Manufacturer="Samsung" OS="Android" Network="4G">Model15</Phone>
+    <Phone OwnerId="6" Manufacturer="Huawei" OS="Android" Network="4G">Model16</Phone>
+    <Phone OwnerId="7" Manufacturer="Samsung" OS="Android" Network="3G">Model17</Phone>
+    <Phone OwnerId="7" Manufacturer="Apple" OS="IOS" Network="4G">Model18</Phone>
+  </Database>
+  <Database name="Owners">
+    <Owner Id="0" Age="14" Gender="Female">Miranda</Owner>
+    <Owner Id="1" Age="15" Gender="Female">Anna</Owner>
+    <Owner Id="2" Age="21" Gender="Male">Peter</Owner>
+    <Owner Id="3" Age="33" Gender="Male">Alexander</Owner>
+    <Owner Id="4" Age="45" Gender="Female">Jane</Owner>
+    <Owner Id="5" Age="55" Gender="Male">Frank</Owner>
+    <Owner Id="6" Age="63" Gender="Female">Laura</Owner>
+    <Owner Id="7" Age="79" Gender="Male">Phil</Owner>
+  </Database>
+</Databases>
