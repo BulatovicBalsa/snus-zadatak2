@@ -13,6 +13,7 @@
     <Phone OwnerId="3" Manufacturer="Samsung" OS="Android" Network="3G">Model10</Phone>
     <Phone OwnerId="3" Manufacturer="Xiaomi" OS="Android" Network="4G">Model11</Phone>
     <Phone OwnerId="4" Manufacturer="Huawei" OS="Android" Network="4G">Model12</Phone>
+    <Phone OwnerId="4" Manufacturer="Huawei" OS="Android" Network="4G">Model22</Phone>
     <Phone OwnerId="5" Manufacturer="Apple" OS="IOS" Network="3G">Model13</Phone>
     <Phone OwnerId="5" Manufacturer="Samsung" OS="Android" Network="4G">Model14</Phone>
     <Phone OwnerId="5" Manufacturer="Samsung" OS="Android" Network="4G">Model15</Phone>

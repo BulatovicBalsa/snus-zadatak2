@@ -2,6 +2,6 @@
 
 MobilePhoneShop.AndroidOwnersCountReport();
 Console.WriteLine("---------------------------------------------------");
-MobilePhoneShop.Report();
+MobilePhoneShop.Report4GHuaweiNonPrimeAge();
 Console.WriteLine("---------------------------------------------------");
-MobilePhoneShop.Report2();
+MobilePhoneShop.Report8CharacterName();

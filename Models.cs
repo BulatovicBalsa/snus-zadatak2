@@ -36,7 +36,10 @@ public class UpgradedSoldPhonesDB : SoldPhonesDB, ISoldPhonesDBUpgrade
 {
     public List<MobilePhone> Get4GHuaweiPhones()
     {
-        return SoldPhones.Where(x => x is { Network: "4G", Manufacturer: "Huawei" }).ToList();
+        var query = from phone in SoldPhones
+            where phone.Network == "4G" && phone.Manufacturer == "Huawei"
+            select phone;
+        return query.ToList();
     }
 }
 
@@ -54,7 +57,9 @@ public class UpgradedOwnersDB : OwnersDB, IOwnersDBUpgrade
 {
     public List<Owner> GetPrimeAgedOwners()
     {
-        return Owners.Where(x => x.Age is >= 20 and <= 40).ToList();
+        return (from owner in Owners
+            where owner.Age is >= 20 and <= 40
+            select owner).ToList();
     }
 }
 
@@ -101,23 +106,24 @@ public static class MobilePhoneShop
 
     public static void AndroidOwnersCountReport()
     {
-        var query = from owner in ODB.Owners
-            join phone in SPDB.SoldPhones on owner.Id equals phone.OwnerId
+        var query = from phone in SPDB.SoldPhones
             where phone.OS == "Android"
-            group phone by owner
+            group phone by phone.OwnerId
             into ownerGroup
+            join owner in ODB.Owners on ownerGroup.Key equals owner.Id
             orderby ownerGroup.Count() descending
             select new
             {
-                OwnerName = ownerGroup.Key.Name,
+                OwnerName = owner.Name,
                 AndroidPhoneCount = ownerGroup.Count()
             };
 
-            query.ToList().ForEach(x =>
+        query.ToList().ForEach(x =>
             Console.WriteLine($"Owner: {x.OwnerName}, Android phone count: {x.AndroidPhoneCount}"));
     }
 
-    public static void Report()
+
+    public static void Report4GHuaweiNonPrimeAge()
     {
         var nonPrimeAgedOwners = ODB.Owners.Where(x => x.Age is < 20 or > 40).ToList();
         var report = from owner in nonPrimeAgedOwners
@@ -138,7 +144,7 @@ public static class MobilePhoneShop
         }
     }
 
-    public static void Report2()
+    public static void Report8CharacterName()
     {
         var report = from owner in ODB.GetPrimeAgedOwners()
             where owner.Name.Length < 8
@@ -149,7 +155,7 @@ public static class MobilePhoneShop
             where ownerGroup.Count() < 2
             select new
             {
-                OwnerName = ownerGroup.Key.Name,
+                OwnerName = ownerGroup.Key.Name
             };
 
         report.ToList().ForEach(x => Console.WriteLine($"Owner: {x.OwnerName}"));
